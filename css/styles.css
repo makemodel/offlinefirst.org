@@ -185,12 +185,12 @@ html {
 /* camp */
 .camp .content {
   padding-top: 100px;
-  margin-left: 105px;
 }
 .camp .content header {
   float: left;
   text-align: center;
   max-width: 170px;
+  margin-left: 105px;
   width: 22.667%;
 }
 
@@ -274,8 +274,14 @@ background: linear-gradient(to bottom,  #1accbc 0%,#1bcba2 100%);
   background: #293641;
 }
 
-.camp .content header + div {
+.camp .content div.main {
   margin-left: 50px;
+  float: left;
+  width: 60%;
+}
+
+.camp .content div.main.details {
+  margin-left: 325px;
   float: left;
   width: 60%;
 }
@@ -299,9 +305,62 @@ background: linear-gradient(to bottom,  #1accbc 0%,#1bcba2 100%);
   margin-top: 12px;
 }
 
+.camp .content ul{
+  margin: 0;
+  padding: 0;
+}
+
+.camp .content ul li{
+  display: inline-block;
+  list-style: none;
+  padding-right: 20px;
+  width: 170px;
+}
+
+.camp .content ul li img{
+  width: 170px;
+  height: 170px;
+}
+
+.camp img.full_image{
+  margin-top: 72px;
+  margin-bottom: 72px;
+  width: 100%;
+}
+
 .camp img.img--right{
   text-align: right;
   width: 100%;
+}
+
+section.offliners{
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+section.credits{
+  background: #FCFCFC;
+  padding-top: 120px;
+}
+
+div.sponsors{
+  margin-left: 325px;
+  float: left;
+  width: 50%;
+}
+div.sponsor{
+
+}
+
+div.event-partners{
+  margin-left: 325px;
+  float: left;
+  width: 50%;
+}
+
+div.team{
+  margin-left: 325px;
+  float: left;
+  width: 60%;
 }
 
 .camp section.sponsorship{
