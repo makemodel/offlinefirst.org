@@ -14,14 +14,12 @@ html {
 }
 
 .container {
-  max-width: 750px;
   margin: 0 auto;
 }
 
 .container > header {
   position: relative;
   height: 170px;
-  margin: 100px 0 0;
 }
 .container > header ul {
   float: left;
@@ -187,12 +185,56 @@ html {
 /* camp */
 .camp .content {
   padding-top: 100px;
+  margin-left: 105px;
 }
 .camp .content header {
   float: left;
   text-align: center;
+  max-width: 170px;
   width: 22.667%;
 }
+
+.container > header h1 {
+background: #1accbc;
+background: -moz-linear-gradient(top,  #1accbc 0%, #1bcba2 100%);
+background: -webkit-linear-gradient(top,  #1accbc 0%,#1bcba2 100%);
+background: linear-gradient(to bottom,  #1accbc 0%,#1bcba2 100%);
+
+  width: 170px;
+}
+
+.container > header a.back {
+  display: block;
+  height: 170px;
+  background: #293641;
+  float: left;
+  padding: 0;
+  position: relative;
+  text-indent: -9999px;
+  width: 105px;
+}
+
+.container > header a.back:before{
+  content: "\2039";
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 65px;
+  text-align: center;
+  font-size: 72px;
+  text-indent: 0;
+  line-height: 30px;
+}
+
+.container > header a.back:hover{
+  background: #5EC1B4;
+}
+
+.container > header h1 a {
+  display: block;
+}
+
 .camp .content header h6 {
   margin: 0;
   font-size: 36px;
@@ -233,7 +275,9 @@ html {
 }
 
 .camp .content header + div {
-  margin-left: 30.667%;
+  margin-left: 50px;
+  float: left;
+  width: 60%;
 }
 
 .camp .content h1 {
@@ -243,6 +287,7 @@ html {
 .camp .content h2 {
   line-height: 48px;
   font-weight: 100;
+  margin-top: 0;
 }
 
 .camp .content h3 {
