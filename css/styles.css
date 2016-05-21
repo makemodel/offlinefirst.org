@@ -281,6 +281,7 @@ background: linear-gradient(to bottom,  #1accbc 0%,#1bcba2 100%);
 .camp .content div.main {
   margin-left: 50px;
   float: left;
+  max-width: 750px;
   width: 60%;
 }
 
@@ -356,6 +357,7 @@ div.sponsors{
   margin-bottom: 120px;
   float: left;
   width: 50%;
+  max-width: 750px;
 }
 div.sponsor{
   margin-bottom: 36px;
@@ -381,6 +383,7 @@ div.sponsor img.yld{
 div.event-partners{
   margin-left: 325px;
   float: left;
+  max-width: 750px;
   width: 50%;
 }
 
@@ -416,13 +419,35 @@ div.event-partners ul li img.bocoup{
 
 div.team{
   margin-left: 325px;
-  margin-bottom: 325px;
+  margin-bottom: 96px;
   float: left;
   width: 60%;
+  max-width: 750px;
 }
 
-.camp div.team ul{
+div.apply{
+  clear: both;
+  background: #FFF;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+}
 
+div.apply span{
+  padding: 0 20px;
+}
+
+div.apply a{
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  line-height: 60px;
+  padding: 0 20px;
+  margin: 0 0 0 20px;
+}
+
+div.apply a:hover{
+  color: #293641;
 }
 
 .camp div.team ul li{
@@ -473,7 +498,7 @@ div.team{
 
 /* Media Queries  */
 
-@media(max-width: 760px) {
+@media(max-width: 775px) {
 
   .container > header{
     margin-top: 0;
@@ -496,8 +521,8 @@ div.team{
   }
 
   .container > header li a {
-    height: 74px;
-    line-height: 74px;
+    height: 85px;
+    line-height: 85px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -541,7 +566,7 @@ div.team{
 
   /*Camp*/
   .camp .content header {
-    background: #E5F7F4;
+    background: #FCFCFC;
     float: none;
     margin-top: 6px;
     width: 100%;
@@ -574,5 +599,141 @@ div.team{
     margin-left: 0;
     margin-top: 30px;
     padding: 0px 20px 20px 20px;
+  }
+}
+
+.camp div.logo{
+  width: 100%;
+  max-width: 275px;
+  float: left;
+}
+
+@media(max-width: 970px){
+  .camp div.logo{
+    width: 30%;
+    max-width: 275px;
+    float: left;
+  }
+
+  .container > header h1{
+    float: left;
+    width: 80%;
+  }
+  .container > header a.back{
+    float: left;
+    width: 20%;
+  }
+
+  .container > header nav{
+    float: left;
+    width: 70%;
+  }
+
+  .container > header nav ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container > header li{
+    width: 25%;
+  }
+
+  .container > header li a{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .camp .content header{
+    margin-left: 6%;
+  }
+}
+
+@media(max-width: 775px){
+
+
+  .container > header ul{
+    margin-top: 0;
+  }
+  .container > header li{
+    width: 50%;
+  }
+  .container > header nav li a{
+    border:none;
+  }
+  .container > header nav li.active a{
+    font-weight: 600;
+  }
+  .camp .content{
+    padding-top: 0; 
+    clear: left;
+  }
+  .camp .content header{
+    margin: 0;
+    max-width: none;
+    width: 100%;
+  }
+  .camp .content header h6,
+  .camp .content header p.location,
+  .camp .content header p.price{
+    display: block;
+    width: 
+    100%;
+  }
+  .camp .content header h6 span,
+  .camp .content header h6 span.day,
+  .camp .content header h6 span.year{
+    display: inline;
+    font-size: 18px;
+    font-weight:normal;
+  }
+
+  .camp .content div.main,
+  .camp .content div.main.details{
+    margin: 24px 5%;
+    padding: 0;
+    width: 90%;
+  }
+
+  .camp img.full_image{
+    margin: 0; 
+  }
+
+  section.credits{
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+  div.sponsors,
+  div.event-partners,
+  div.team,
+  div.apply{
+    margin: 48px 5%;
+    width: 90%;
+  }
+
+  .camp div.team ul li{
+    margin: 24px 2.5%;
+    padding: 0;
+    float: left;
+    width: 45%;
+  }
+  .camp div.team ul li img{
+    height: auto;
+    width: 100%;
+  }
+  .camp div.team ul li a{
+    display: block;
+  }
+}
+
+@media(max-width: 600px) {
+  .camp div.logo{
+    width: 100%;
+    max-width: none;
+    float: left;
+  }
+  .container > header nav{
+    width: 100%;
   }
 }
