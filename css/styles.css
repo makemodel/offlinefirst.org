@@ -13,6 +13,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div.clear{
+  clear: both;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -313,7 +317,9 @@ background: linear-gradient(to bottom,  #1accbc 0%,#1bcba2 100%);
 .camp .content ul li{
   display: inline-block;
   list-style: none;
+  font-size: 18px;
   padding-right: 20px;
+  margin-bottom: 24px;
   width: 170px;
 }
 
@@ -339,22 +345,57 @@ section.offliners{
 }
 section.credits{
   background: #FCFCFC;
+  clear: both;
   padding-top: 120px;
 }
 
 div.sponsors{
   margin-left: 325px;
+  margin-bottom: 120px;
   float: left;
   width: 50%;
 }
 div.sponsor{
+  margin-bottom: 36px;
+}
 
+div.sponsor.ibm{
+  margin-bottom: 96px;
+}
+
+div.sponsor p{
+  font-size: 36px;
+  font-weight: 100;
+}
+
+div.sponsor img.ibm{
+  width: 250px;
+}
+
+div.sponsor img.yld{
+  width: 120px;
 }
 
 div.event-partners{
   margin-left: 325px;
   float: left;
   width: 50%;
+}
+
+div.event-partners{
+
+}
+
+div.event-partners ul li img.hoodie{
+  width: 100px;  
+}
+
+div.event-partners ul li img.makemodel{
+  width: 100px;  
+}
+
+div.event-partners ul li img.bocoup{
+  width: 100px;  
 }
 
 div.team{
