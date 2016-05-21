@@ -347,6 +347,8 @@ section.credits{
   background: #FCFCFC;
   clear: both;
   padding-top: 120px;
+  margin-top: 120px;
+  float: left;
 }
 
 div.sponsors{
@@ -383,25 +385,52 @@ div.event-partners{
 }
 
 div.event-partners{
+  margin-bottom: 120px;
+}
 
+.camp div.event-partners ul{
+  margin-top: 72px;
+}
+
+.camp div.event-partners ul li{
+  margin-right: 40px;
+  margin-bottom: 42px;
+  height: auto;
+  width: auto;
 }
 
 div.event-partners ul li img.hoodie{
-  width: 100px;  
+  width: 260px;
+  height: auto;
 }
 
 div.event-partners ul li img.makemodel{
-  width: 100px;  
+  width: 140px;
+  height: auto;
 }
 
 div.event-partners ul li img.bocoup{
-  width: 100px;  
+  width: 220px;
+  height: auto;
 }
 
 div.team{
   margin-left: 325px;
+  margin-bottom: 325px;
   float: left;
   width: 60%;
+}
+
+.camp div.team ul{
+
+}
+
+.camp div.team ul li{
+  vertical-align: top;
+}
+
+.camp div.team ul li img{
+  margin: auto;
 }
 
 .camp section.sponsorship{
