@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+
+If you're offline and you know it clap your hands!
+
+-->
+<html lang="en" manifest="/cache.manifest">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <title>Offline First Camp</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-touch-icon-152x152.png" />
+
+  <script>
+        (function(){
+            function addFont() {
+                var style = document.createElement('style');
+                style.rel = 'stylesheet';
+                document.head.appendChild(style);
+                style.textContent = localStorage.firaSansWeb;
+            }
+
+            try {
+                if (localStorage.firaSansWeb) {
+                    // The font is in localStorage, we can load it directly
+                    addFont();
+                } else {
+                    // We have to first load the font file asynchronously
+                    var request = new XMLHttpRequest();
+                    request.open('GET', './css/fonts.css', true);
+
+                    request.onload = function() {
+                        if (request.status >= 200 && request.status < 400) {
+                            // We save the file in localStorage
+                            localStorage.firaSansWeb = request.responseText;
+
+                            // ... and load the font
+                            addFont();
+                        }
+                    };
+
+                    request.send();
+                }
+            } catch(ex) {
+                // maybe load the font synchronously for woff-capable browsers
+                // to avoid blinking on every request when localStorage is not available
+            }
+        }());
+      </script>
+</head>
+<body class="camp">
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="../" class="back" title="Go to homepage">Offline First</a>
+        <h1>
+          <a href="/" title="Go to Offline Camp">Offline Camp</a>
+        </h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">The Event</a></li>
+          <li class="active"><a href="schedule.html">Schedule</a></li>
+          <li><a href="sponsorships.html">Sponsorships</a></li>
+          <li><a href="codeofconduct.html">Code of Conduct</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <header>
+        <h6>
+          <span class="month">June</span>
+          <span class="day">24-26<sup>th</sup></span>
+          <span class="year">2016</span>
+        </h6>
+
+        <p class="location">
+          <a href="https://www.google.com/maps/place/Jewett,+NY+12444/@42.2556971,-74.3058334,3382m/data=!3m1!1e3!4m2!3m1!1s0x89dc4ddb003da3bb:0x4d57a12847c9d681">Jewett, NY<br>
+          30 Campers</a>
+        </p>
+
+        <hr>
+
+        <p class="price">
+          $200
+        </p>
+
+        <p class="attend">
+          <!-- Typeform link -->
+          <a class="typeform-share link" href="https://offlinecamp.typeform.com/to/RA7ZrH" data-mode="2" target="_blank">Apply</a>
+          <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+          <!-- /Typeform link -->
+        </p>
+      </header>
+      <div class="main">
+        <h2>
+          The Schedule
+        </h2>
+        <p>This schedule will be updated as we get closer to the event.</p>
+
+        <h3>Friday, 24th – arrive and get comfy</h3>
+        <p>
+          Any offliners requiring help travelling to the location will be offered car pooling. If you require this, please let us know when you apply.
+        </p>
+
+        <h3>Saturday &amp; Sunday, 25-26th – discussions, projects, and games</h3>
+        <p>
+          Discuss and work freely with other offliners between well paced use-it-or-lose it speaking times, group discussions, and games.
+        </p>
+<!--         <section class="offliners">
+          <h2>Your fellow offliners</h2>
+          <ul>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+            <li>
+              <a href="#">
+              <img src="../images/catskills-lake.jpg" alt="">
+              </a>
+              Camper Name
+            </li>
+          </ul>
+         </section> -->
+      </div>
+      <section class="credits">
+        <div class="sponsors">
+          <div class="sponsor ibm">
+            <img src="../images/ibmpos_black.svg" alt="" class="ibm">
+            <p>A huge thank you to our foundational sponsor and partner, <strong>IBM Cloud Data Services</strong>. Without them, this wouldn't be possible.</p>
+          </div>
+          <div class="sponsor yld">
+            <img src="../images/YLD_logo_black.svg" alt="" class="yld">
+            <p>Our diversity sponsors are helping us bring people who’re shaping offline experiences from the around the world.</p>
+          </div>
+          <p>Pulling the community together for a more focused conversation around offline will be tremendous for advancing offline tooling, design patterns, and making the challenge more visible. We would love to have your help.</p>
+          <a href="sponsorships.html">View our sponsorship options</a>
+        </div>
+
+        <div class="event-partners">
+          <h2>Tremendous logistical and systems support from our event partners:</h2>
+          <ul>
+            <li><img src="../images/hoodie_logo.svg" alt="Hoodie" class="hoodie"></li>
+            <li><img src="../images/MM_logo.svg" alt="Make&Model" class="makemodel"></li>
+            <li><img src="../images/bocoup.png" alt="Bocoup" class="bocoup"></li>
+          </ul>
+        </div>
+        <div class="team">
+          <h2>The Offline Camp Team</h2>
+          <ul>
+            <li>
+              <a href="http://www.twitter.com/gr2m">
+                <img src="../images/team/gregor.png" alt="" class="full_image">
+              </a>
+              Gregor Martynus <a href="http://www.twitter.com/gr2m">@gr2m</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/EventTeri">
+                <img src="../images/team/teri.jpg" alt="" class="full_image">
+              </a>
+              Teri Chadbourne <a href="http://www.twitter.com/EventTeri">@EventTeri</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/strevat">
+                <img src="../images/team/steve.jpg" alt="" class="full_image">
+              </a>
+              Steven Trevathan <a href="http://www.twitter.com/strevat">@strevat</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/Mo_Mack">
+                <img src="../images/team/maureen.jpg" alt="" class="full_image">
+              </a>
+              Maureen McElaney <a href="http://www.twitter.com/Mo_Mack">@Mo_Mack</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/BradleyHolt">
+                <img src="../images/team/bradley.jpg" alt="" class="full_image">
+              </a>
+              Bradley Holt <a href="http://www.twitter.com/BradleyHolt">@BradleyHolt</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../images/team/corvo.png" alt="" class="full_image">
+              </a>
+              Corvo
+            </li>
+          </ul>
+        </div>
+        <div class="apply">
+          <span class="date">June 24–26</span>
+          <span class="price">$200</span>
+          <a class="typeform-share link" href="https://offlinecamp.typeform.com/to/RA7ZrH" data-mode="2" target="_blank">Apply</a>
+        </div>
+        <div class="clear"></div>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '5277cdb6613f5d38f6000069');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</body>
+</html>

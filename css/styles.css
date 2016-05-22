@@ -19,6 +19,8 @@ div.clear{
 
 .container {
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 
 .container > header {
@@ -147,12 +149,27 @@ div.clear{
 
 /* home */
 .home .content {
-  margin-left: 30.667%;
+  margin-left: 220px;
+  float: left;
+  width: 60%;
 }
 
 /* events */
 
+.events .content {
+  margin-left: 220px;
+  float: left;
+  width: 60%;
+}
+
 /* news */
+
+.new .content {
+  margin-left: 220px;
+  float: left;
+  width: 60%;
+}
+
 .newsletter {
   padding: 0 20px;
   border-bottom: 1px solid #B0CEC9;
@@ -350,6 +367,7 @@ section.credits{
   padding-top: 120px;
   margin-top: 120px;
   float: left;
+  width: 100%;
 }
 
 div.sponsors{
@@ -495,6 +513,52 @@ div.apply a:hover{
   text-decoration: none;
 }
 
+
+/* Sponsorships */
+
+canvas.release-confetti{
+  display: none;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.camp .content ul.sponsorships{
+
+}
+
+.camp .content ul.sponsorships li{
+  padding: 0;
+  width: 100%;
+}
+
+.camp .content ul.sponsorships a{
+  background: #FCFCFC;
+  box-sizing: border-box;
+  border: 3px solid #FCFCFC;
+  color: #293641;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.camp .content ul.sponsorships a:hover{
+  color: #5EC1B4;
+  border: 3px solid #5EC1B4;
+}
+
+.camp .content ul.sponsorships span.name{
+  font-size: 24px; 
+  font-weight: 600;
+}
+.camp .content ul.sponsorships span.price{
+  float: right;
+}
 
 /* Media Queries  */
 
