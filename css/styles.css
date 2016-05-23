@@ -593,10 +593,13 @@ canvas.release-confetti{
     width: 100%;
   }
 
-  .home .content {
+  .home .content,
+  .events .content,
+  .new .content {
     clear:left;
     margin-left: 0;
-    padding: 0px 20px 20px 20px;
+    padding: 0 5%;
+    width: 90%;
   }
 
   /*News*/
@@ -686,6 +689,12 @@ canvas.release-confetti{
   .container > header a.back{
     float: left;
     width: 20%;
+  }
+
+  .home .container > header h1,
+  .events .container > header h1,
+  .new .container > header h1{
+    width: 100%;
   }
 
   .container > header nav{
